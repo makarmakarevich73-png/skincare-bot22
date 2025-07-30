@@ -1,0 +1,1 @@
+TOKEN = "8389430141:AAE5HTxNDjyXN_xoVASwAJJi4QrkldJ5wyo"  # ← сюда вставь токен

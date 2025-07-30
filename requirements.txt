@@ -1,0 +1,15 @@
+# Requirements for aiogram 2.x stack (works on Python 3.10–3.12)
+# NOTE: On Render we pin Python via runtime.txt -> python-3.10.12
+# These markers prevent installing incompatible wheels on Python 3.13+.
+
+Flask==2.3.3
+gunicorn==21.2.0
+python-dotenv==1.0.1
+
+# aiogram 2.x requires aiohttp < 3.9 — pin both under Python < 3.13
+aiogram==2.25.2; python_version < "3.13"
+aiohttp==3.8.6; python_version < "3.13"
+
+# Optional explicit deps pulled by aiogram (kept stable)
+Babel==2.9.1; python_version < "3.13"
+magic-filter==1.0.12; python_version < "3.13"
